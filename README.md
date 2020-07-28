@@ -10,7 +10,7 @@ SET UP PYTHON ENVIRONMENT
 - On Linux or Mac run "source {venv_folder_name}/bin/activate" or on Windows run ".\env\Scripts\activate.bat" to activate the Python virtual environment
 - Run "pip install requirements.txt" to install the required software
 - Run "python main.py"
-- Copy and paste this url http://localhost:5000/pokemons in your browser. If everything is fine you should see a Json representation of the database with all the available Pokemons
+- Copy and paste this url http://localhost:5000/pokemon in your browser. If everything is fine you should see a Json representation of the database with all the available Pokemons
 
 SET UP REACT APPLICATION
 - Cd to the project directory
