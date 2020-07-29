@@ -25,18 +25,6 @@ SET UP REACT APPLICATION
 
 SET UP DOCKER CONTAINER
 
-- Cd to react app directory and create a Dockerfile or copy that one in the repo folder
-
-FROM node:latest
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
-COPY package.json /usr/src/app/
-RUN npm install
-ADD src /usr/src/app/src
-ADD public /usr/src/app/public
-EXPOSE 3000
-CMD ['npm', 'start']
-
-
+- Cd to react app directory and copy the Dockerfile from the repo folder
 - Run this command to build the image "docker build -t react-docker ."
 - Run this command to launch the container "docker run -it -p 3000:3000 react-docker npm start"
