@@ -17,5 +17,6 @@ SET UP REACT APPLICATION
 - Run "npx create-react-app {react_app_name}"
 - Cd to {react_app_name} folder
 - From the repo folder, copy App.js, style.css, "components" folder and "images" folder into "src" folder
+- If necessary run "npm i axios --save" to install Axios
 - Run "npm start"
 - Copy and paste this url http://localhost:3000/ in your browser. If the app is running you should see the search input and you can start to search for the available Pokemons.

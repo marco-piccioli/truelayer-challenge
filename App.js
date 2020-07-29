@@ -15,7 +15,10 @@ class PokemonForm extends Component {
     favorite_action: 'Add to Favorites',
     favorite_button: 'button-favorite'
   };
-  this.state.favorites = JSON.parse(localStorage.getItem('favorites'));
+  if (localStorage.getItem('favorites') === null) {
+    let initArray = new Array();
+    localStorage.setItem('favorites', JSON.stringify(initArray));
+  }
   console.log(this.state.favorites);
   }
 
@@ -26,7 +29,9 @@ class PokemonForm extends Component {
       this.setState({ pokemon_results: [] });
       this.setState({ favorite_action: 'Add to Favorites' });
       this.setState({ favorite_button: 'button-favorite' });
+      if (localStorage.getItem('favorites') !== null && localStorage.getItem('favorites') !== undefined) {
       this.state.favorites = JSON.parse(localStorage.getItem('favorites'));
+      }
       console.log(this.state.favorites);
       if(this.state.pokemon_name==='') {
         this.setState({ pokemon_error: 'Please insert a search key!' });
