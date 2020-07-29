@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+h1 {
+  font-family: "Open Sans";
+  font-size: 36px;
+  color: black;
+  text-align:center;
+  display: inline;
+}
+
+form, p {
+  text-align:center;
+}
+
+
+input {
+    font-family: "Open Sans";
+    font-size: 12px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    height:20px;
+    font-size:14px;
+    width:400px;
+}
+
+.header {
+  text-align:center;
+}
+
+.header_image {
+  width:500px;
+}
+
+.button-search {
+  color:#ffcb05;
+  background-color:#2a75bb;
+  border:0px;
+  border-radius: 4px;
+  padding: 5px 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size:14px;
+}
+
+.button-favorite {
+  width:250px;
+  margin-top:30px;
+  font-size:18px;
+  font-weight: bold;
+  cursor: pointer;
+  color:#ffcb05;
+  background-color:#2a75bb;
+  border:0px;
+  border-radius: 4px;
+  padding: 5px 5px;
+}
+
+.button-favorite-gold {
+  width:250px;
+  margin-top:30px;
+  font-size:18px;
+  font-weight: bold;
+  cursor: pointer;
+  color:#2a75bb;
+  background-color:#ffcb05;
+  border:0px;
+  border-radius: 4px;
+  padding: 5px 5px;
+}
+
+.image-error {
+  width:300px;
+}
+
+.result-error {
+  align:center;
+  text-align:center;
+  width:30%;
+  color:#ffcb05;
+  background-color:#2a75bb;
+  display: inline-block;
+  margin-top:50px;
+  font-size: 24px;
+}
+
+.result {
+  align:center;
+  text-align:center;
+  width:60%;
+  background-color: white;
+  color: black;
+  display: inline-block;
+  margin-top:50px;
+}
+
+.result-title {
+  margin-top:20px;
+  margin-bottom:5px;
+  font-size: 40px;
+  text-transform:capitalize;
+}
+
+.result-text {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom:5px;
+  text-align:left;
+}
+
+.wrapper {
+  text-align:center;
+}
+
+.image {
+  width:200px;
+}
