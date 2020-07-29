@@ -25,7 +25,7 @@ SET UP REACT APPLICATION
 
 SET UP DOCKER CONTAINER
 
-- Cd to react app directory and create a Dockerfile
+- Cd to react app directory and create a Dockerfile or copy that one in the repo folder
 
 FROM node:latest
 RUN mkdir -p /usr/src/app
