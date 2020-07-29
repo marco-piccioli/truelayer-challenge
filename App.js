@@ -16,7 +16,7 @@ class PokemonForm extends Component {
     favorite_button: 'button-favorite'
   };
   if (localStorage.getItem('favorites') === null) {
-    let initArray = new Array();
+    let initArray = [];
     localStorage.setItem('favorites', JSON.stringify(initArray));
   }
   console.log(this.state.favorites);
@@ -30,7 +30,8 @@ class PokemonForm extends Component {
       this.setState({ favorite_action: 'Add to Favorites' });
       this.setState({ favorite_button: 'button-favorite' });
       if (localStorage.getItem('favorites') !== null && localStorage.getItem('favorites') !== undefined) {
-      this.state.favorites = JSON.parse(localStorage.getItem('favorites'));
+      //this.state.favorites = JSON.parse(localStorage.getItem('favorites'));
+      this.setState({ favorites: JSON.parse(localStorage.getItem('favorites')) });
       }
       console.log(this.state.favorites);
       if(this.state.pokemon_name==='') {
@@ -77,7 +78,7 @@ class PokemonForm extends Component {
 render() {
   return (
     <>
-          <div className="header"><img className="header_image" src={require('./images/pokemon-shakespeare.png')}/></div>
+          <div className="header"><img alt="header_image" className="header_image" src={require('./images/pokemon-shakespeare.png')}/></div>
           <div className="header"><h1>Welcome to the Pokemon-Shakespeare Database</h1></div>
           <p>Please insert the name of a Pokemon (case-insensitive) to get its Shakespearized description</p>
           <form onSubmit = { this.handleSubmit }>
